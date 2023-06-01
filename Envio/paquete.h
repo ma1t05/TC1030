@@ -11,7 +11,7 @@ class paquete : public envio {
     double costoXKg;
     public:
         paquete();
-        paquete(direccion&, direccion&, int, int, int, double, double);
+        paquete(direccion&, direccion&, double, int, int, int, double, double);
         double calculaCosto();
 };
 
