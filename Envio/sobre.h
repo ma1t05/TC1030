@@ -9,7 +9,7 @@ class sobre : public envio {
     double cargoAdicional;
     public:
         sobre();
-        sobre(direccion&, direccion&, int, int, double);
+        sobre(direccion&, direccion&,double , int, int, double);
         double calculaCosto();
 };
 
