@@ -25,6 +25,11 @@ coordenadaRect coordenadaRect::operator+(const coordenadaRect& v){
     return ans;
 }
 
+coordenadaRect coordenadaRect::operator-(const coordenadaRect& v){
+    coordenadaRect ans(this->x - v.getX(), this->y - v.getY());
+    return ans;
+}
+
 ostream& operator<<(ostream& os,const coordenadaRect& v) {
     os << "(" << v.getX() << "," << v.getY() << ")";
     return os;

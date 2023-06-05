@@ -12,6 +12,7 @@ class coordenadaRect {
         int getX() const;
         int getY() const;
         coordenadaRect operator+(const coordenadaRect&);
+        coordenadaRect operator-(const coordenadaRect&);
 };
 
 std::ostream& operator<<(std::ostream&,const coordenadaRect&);
