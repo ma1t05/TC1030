@@ -7,16 +7,16 @@ coordenadaRect::coordenadaRect(){
     x= y = 0;
 }
 
-coordenadaRect::coordenadaRect(int _x,int _y){
-    x = _x;
+coordenadaRect::coordenadaRect(double x,double _y){
+    this->x = x;
     y = _y;
 }
 
-int coordenadaRect::getX() const{
+double coordenadaRect::getX() const{
     return x;
 }
 
-int coordenadaRect::getY() const{
+double coordenadaRect::getY() const{
     return y;
 }
 
@@ -27,6 +27,12 @@ coordenadaRect coordenadaRect::operator+(const coordenadaRect& v){
 
 coordenadaRect coordenadaRect::operator-(const coordenadaRect& v){
     coordenadaRect ans(this->x - v.getX(), this->y - v.getY());
+    return ans;
+}
+
+coordenadaRect coordenadaRect::operator+(const coordenadaPol& vP){
+    coordenadaRect vR = vP.toRect();
+    coordenadaRect ans = *this + vR;
     return ans;
 }
 

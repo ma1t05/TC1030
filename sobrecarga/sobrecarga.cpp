@@ -24,5 +24,9 @@ int main() {
     cout << p3 << endl;
     cout << p4 << endl;
 
+    r4 = r1 + p2;
+    cout << endl << "Coordenada Rec + Pol"<< endl;
+    cout << r4 << endl;
+
     return 0;
 }
